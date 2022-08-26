@@ -1,0 +1,17 @@
+int missingNumber(vector<int>& nums) {
+          int n = nums.size();                       
+        int sum_n = n*(n+1)/2;
+        int sum_i = 0;
+        for(int i = 0; i < n; i++)
+        {
+               sum_i = sum_i + nums[i];
+        }
+        return sum_n - sum_i;
+    }
+    
+    
+    /* we know sum of 0 to n number = n *(n+1)/2;
+    so we can easily find the missing number by adding all the numbers of given array; 
+    then sum of n - sum of array = missing number ;
+    
+    */
