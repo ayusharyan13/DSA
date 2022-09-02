@@ -1,0 +1,8 @@
+bool isPalindrome(int x) {
+        string final = to_string(x);
+        string reversed(final);
+        reverse(reversed.begin(),reversed.end());
+        if(final == reversed)
+            return true;
+        return false;
+    }
